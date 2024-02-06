@@ -1,0 +1,40 @@
+.features {
+    display: flex;
+    flex-direction: column;
+    /* Modif */
+    background-color: #FFFFFF;
+    justify-content: space-between;
+}
+
+@media (min-width: 920px) {
+    .features {
+        flex-direction: row;
+    }
+}
+
+.feature-icon {
+    width: 100px;
+    border: 10px solid #00bc77;
+    border-radius: 50%;
+    padding: 1rem;
+    /* Modif */
+    margin: 0 auto;
+}
+
+.feature-item {
+    flex: 1;
+    padding: 2.5rem;
+    /* Modif */
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-item-title {
+    color: #222;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    /* Modif */
+    text-align: center;
+}

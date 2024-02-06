@@ -1,0 +1,74 @@
+.flexMain {
+    display: flex;
+}
+
+.edit-button {
+    border-color: #00bc77;
+    background-color: #00bc77;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    width: 80px;
+    margin-top: 15px;
+    border-radius: 3px;
+}
+
+.header {
+    color: #fff;
+    margin-bottom: 2rem;
+    margin: 0 auto;
+}
+
+.nameEditorForm {
+    display: flex;
+    flex-direction: row;
+}
+
+.profileTitle {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.formSide {
+    display: flex;
+    flex-direction: column;
+}
+
+.nameEditorInput {
+    padding: 10px;
+}
+
+.leftForm {
+    margin-right: 10px;
+}
+
+.leftButton {
+    margin-left: 105px;
+}
+
+.rightForm {
+    margin-left: 10px;
+}
+
+.rightButton {
+    margin-right: 105px;
+}
+
+.errorMessage {
+    color: red;
+}
+
+.namesContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.names {
+    text-align: center;
+    font-size: 31px;
+}
+
+.changeNameBtn {
+    width: 155px;
+    margin: 0 auto;
+}
