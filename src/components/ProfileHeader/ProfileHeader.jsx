@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react'
+import { useRef, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import * as actions from '../../Redux/Reducer.js'
 import useUserUpdate from '../../Hooks/useUserUpdate.jsx'
@@ -22,14 +22,11 @@ export default function ProfileHeader() {
         if (firstNameRef.current.value === '' || lastNameRef.current.value === '') {
             setErrorMessage('All fields are required')
         } else {
-            console.log(firstNameRef.current.value, lastNameRef.current.value)
             const res = await getUserUpdate(firstNameRef.current.value, lastNameRef.current.value)
             if (res.error) {
-                console.log("erreur dans HandleUpdate" + res.error)
                 setErrorMessage(res.error)
             } else {
                 dispatch(actions.setUser({ firstName: res.firstName, lastName: res.lastName }))
-                console.log("Dispatch dans HandleUpdate" + res)
                 setErrorMessage(null)
                 setChangeName(false)
             }

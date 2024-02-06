@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import useAuth from '../../Hooks/useAuth.jsx'
@@ -34,7 +34,6 @@ export default function LoginForm() {
             setErrorMessage("Incorrect username or password")
         } else {
             dispatch(actions.setToken({ token: res }))
-            console.log(res)
             setErrorMessage(null)
         }
     }
