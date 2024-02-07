@@ -29,7 +29,7 @@ export default function Profile() {
     }, [stateIsLogged])
 
     return (
-        <div className='main bg-dark'>
+        <div className='main bg-dark main-profile'>
             <div className="flexMain">
                 <ProfileHeader />
             </div>
